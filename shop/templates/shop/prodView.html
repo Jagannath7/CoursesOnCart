@@ -6,12 +6,14 @@
     <div class="row">
     <div class="col-md-4">
     <div class="row">
+          <h5>{{product.Organization}}</h5>
+
+  </div>
+    <div class="row">
+
         <img src="/media/{{product.image}}" width="233px" height="385px">
-    </div>
-        <div class="row">
-            <button class="btn btn-primary mx-3">Buy Now</button>
-            <button class="btn btn-primary">Add To Cart</button>
-        </div>
+</div>
+
 
     </div>
 
@@ -19,11 +21,11 @@
         <h5>{{product.product_name}}</h5>
         <p><b>Rs.{{product.price}} </b></p>
         <p>{{product.desc}}</p>
-
-
+        <form action= "{{product.link}}" >
+        <button class="btn btn-primary mx-3" type = "submit" value = "Lets Get Started">Buy Now</button>
+        </form>
     </div>
     </div>
-
 
 </div>
 

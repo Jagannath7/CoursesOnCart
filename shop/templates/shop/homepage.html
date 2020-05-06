@@ -1,0 +1,55 @@
+<!--
+<!-- <form action= "{% url "ShopHome" %}" >
+<input type = "submit" value = "Lets Get Started"></input>
+</form>  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CoursesOnCart</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<style type="text/css">
+		body{
+			background: url("https://www.pentasia.com/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaXhwIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9b531a296e23edbb0ae0d85e4160a44a71b44f8e/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9VWTI5dFltbHVaVjl2Y0hScGIyNXpld2c2QzNKbGMybDZaVWtpRGpFd01EQjROVEF3WGdZNkJrVlVPZ3huY21GMmFYUjVTU0lMUTJWdWRHVnlCanNIVkRvSlkzSnZjRWtpRVRFd01EQjROVEF3S3pBck1BWTdCMVE9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--46c71b34483be69bdb6c526f3ee4da2b74b4cce2/1662_original.jpg");
+  			background-repeat:no-repeat;
+   			background-size:cover;
+		}
+		h2{
+			color: white;
+			text-align: center;
+			font-size: 100px;
+			font-weight: bold;
+			padding-top: 30
+		}
+		h4{
+			color: white;
+			text-align: center;
+			font-size: 40px;
+		}
+
+		.btn{
+			text-align:center;
+			margin-left:600px;
+			margin-right:50px;
+			margin-top: 100px;
+      color: black;
+
+		}
+		.btn:hover{
+			background: #00cccc;
+		}
+
+	</style>
+</head>
+<body>
+	<h2>CoursesOnCart</h2>
+	<h4>Education within the reach of hand</h4>
+	<!-- <button class="btn" onclick="{% url "ShopHome" %}">Let's get started</button> -->
+</body>
+
+<form action= "{% url "ShopHome" %}" >
+<button class = "btn" type = "submit" value = "Lets Get Started">Let's get started</button>
+</form>
+</html>
