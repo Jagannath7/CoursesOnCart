@@ -6,7 +6,9 @@
           display: inline-block;
           margin-left:-4px;
           }
-
+          .card {
+            height : 400px;
+          }
           .carousel-indicators .active {
           background-color: blue;
             }
@@ -66,8 +68,8 @@
 
         {% for i in product %}
         <div class="col-xs-3 col-sm-3 col-md-3">
-          <div class="card" style="width: 18rem;">
-            <img src='/media/{{i.image}}' class="card-img-top" alt="...">
+          <div class="card align-items-center" style="width: 18rem;">
+            <img src='/media/{{i.image}}' class="card-img-top" >
             <div class="card-body">
                 <h5 class="card-title">{{i.product_name}}</h5>
                 <p class="card-text">{{i.desc|slice:"0:53"}}...</p>
