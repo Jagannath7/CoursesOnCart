@@ -1,5 +1,27 @@
 {% extends 'shop/basic.html' %}
 
+{% block css %}
+  body {
+      background-color: LightBlue;
+  }
+
+  #page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+
+  #content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
+
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 25rem;
+    background-color: Teal;          /* Footer height */
+  }
+{% endblock %}
 {% block title%} Contact Us - My Awesome Cart{% endblock %}
 {% block body %}
 <div class="container my-3">
@@ -26,7 +48,15 @@
   </div>
         <button type="submit" class="btn btn-success">Submit</button>
 </form>
+<div id="page-container" style="color:white">
+  <div id="content-wrap">
+    <!-- all other page content -->
 
+  </div>
+  <footer id="footer">
+    <h5>Phone No. : </h5>
+    Mobole : </footer>
+</div>
 
 
 </div>
