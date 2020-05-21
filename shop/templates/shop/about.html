@@ -1,4 +1,143 @@
 {% extends 'shop/basic.html' %}
 
-{% block title%} Title of About{% endblock %}
-{% block body %} This is body {% endblock %}
+{% block title%} About{% endblock %}
+
+{% block css %}
+<style type="text/css">
+.header {
+    padding: 60px;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+body{
+  background: #E6DADA;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #274046, #E6DADA);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #274046, #E6DADA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+    .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+}
+
+
+    .card {
+        box-shadow: 0 7px 8px 0 rgba(0, 0, 0, 0.2);
+        /* margin: 100px;
+        width:18rem; */
+        /* height: 18rem;  */
+    }
+
+    .card-title{
+        text-align: center;
+    }
+    .card-text{
+        height:18 rem;
+        text-align: center;
+    }
+    .card-image-top{
+
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color:#474e5d;
+      color: white;
+      height: 200px;
+    }
+
+</style>
+{% endblock %}
+
+{% block body %}
+
+    <div class="about-section">
+        <h1>About Us</h1>
+        <p>courses on cart</p>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</p>
+      </div>
+
+
+
+    <div class="header">
+        <h1>Our Team</h1>
+  </div>
+  {% load static %}
+
+
+  <section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src= "{% static 'anjali.jpg' %}"  alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Anjali</h4>
+
+                        <p class="card-text"> WEB DEVELOPER</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="{% static 'sargam.jpg' %}" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Sargam Verma</h4>
+
+                        <p class="card-text"> WEB DEVELOPER</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="{% static 'vibhu.jpg' %}" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Vibhuti</h4>
+
+                        <p class="card-text">MACHINE LEARNING</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="{% static 'JJ.jpg' %}" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title" >Jagannath</h4>
+
+                        <p class="card-text">MACHINE LEARNING</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="{% static 'satvik.jpg' %}" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Satvik</h4>
+
+                        <p class="card-text">MACHINE LEARNING</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<footer>
+  <h2>For contact</h2>
+  <p>coursesoncart@gmail.com</p>
+  <p>phone no:99999999</p>
+  <i class="fa fa-facebook-square" style="font-size:30px"></i><span>  </span>
+  <i class="fa fa-instagram" style="font-size:30px"></i>
+
+</footer>
+
+
+
+{% endblock %}

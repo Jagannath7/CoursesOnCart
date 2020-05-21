@@ -1,12 +1,43 @@
+
 {% extends 'shop/basic.html' %}
 
 {% block title%} Title of About{% endblock %}
-{% block body %} This is body
+{% block body %}
+
+{% load static %}
+
+
+
+<!-- <img src="{% static 'back.jpg' %}" alt="Girl in a jacket" width="1350" height="600">
+<br /> -->
+
+
+
+
+<div class="w3-container my-3">
+  <img src="{% static 'back.jpg' %}" alt="Girl in a jacket" width="1350" height="600">
+  <div class="text-block">
+    <h1>WANT TO</h1>
+    <h1>LEARN NEW </h1>
+    <h1>SKILLS..??</h1>
+  </div>
+</div>
+
+<!-- <div class=""> -->
+<div class="container">
+  <!-- <p>Hover over the image:</p> -->
+  <img src="{% static 'lapy2.jpg' %}" id = "im" width="300" height="300">
+  <div class="container-text">
+    <h1>Kya Aapke concepts bhi iss picture ki trh hile hue hai?</h1>
+    <p> if yes then aage ka content likh do<p>
+  </div>
+</div>
 
 <div class="col-12 col-sm-6 offset-md-1">
       <div class="mb-0 mb-md-6">
             <div class="mt-heading-heart d-inline">
                 <h2 class="text-responsive-h2 d-inline"><br />Strategically creative </h2>
+
             </div>
                 <h3 class="text-responsive-h4 text-opacity font-weight-light">No nasties added</h3>
         </div>
@@ -24,4 +55,55 @@
           <p>Whether you need to create a new website, improve your search engine optimisation or create engaging content we can drive your business to greater digital efficiency.</p>
 </div>
 
+{% endblock %}
+
+
+{% block css %}
+
+.container-text {
+  top: 80px;
+  right: 200px;
+  color: black;
+}
+
+ .text-block {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  font-weight: 700;
+  font-weight: bold;
+  color: white;
+  padding-right: 20px;
+}
+
+.text-block h1{
+  font-size: 100px;
+}
+
+#im:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.container {
+  <!-- background-color: DarkSlateGray; -->
+  <!-- max-width: 1400; -->
+  height: 1000px;
+  width: 1200px;
+ background-color: powderblue;
+}
 {% endblock %}

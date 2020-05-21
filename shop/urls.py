@@ -1,6 +1,9 @@
 
 from django.urls import path
 from . import views
+from django.conf import settings
+from django.conf.urls.static import static
+
 
 urlpatterns = [
     path("", views.index, name="ShopHome"),
@@ -9,4 +12,4 @@ urlpatterns = [
     path("search/", views.search, name="Search"),
     path("contact/", views.contact, name="ContactUs"),
     path("products/<int:myid>", views.productView, name="ProductView"),
-]
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
